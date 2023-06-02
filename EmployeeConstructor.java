@@ -1,5 +1,7 @@
 package TNSIndia;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Arrays;
 
 class Employee{
@@ -39,6 +41,11 @@ class Employee{
         return "The name is:"+this.name+" The Joining Year is :"+this.yearOfJoining+" The address is "+this.address;
     }
 }
+class EmployeeMoreInfo extends Employee{
+    void displayInfo(){
+        System.out.println(this.name + this.yearOfJoining + this.address);
+    }
+}
 public class EmployeeConstructor {
     public static void main(String[] args) {
         Employee e1=new Employee("Robert",1994,"64C- WallsStreat");
@@ -67,11 +74,11 @@ public class EmployeeConstructor {
 
 
 
-//        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr));
 //                         OR
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-        }
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.println(arr[i]);
+//        }
 
     }
 }

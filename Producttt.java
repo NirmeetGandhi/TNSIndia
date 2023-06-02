@@ -13,12 +13,15 @@ class Product{
         if (totalQuantity>=quantity) {
             totalQuantity = totalQuantity - quantity;
             totalSold+=quantity;
+            System.out.println("Congratulations!!,The products are sold");
             System.out.println("The product "+this.name+" is sold:"+quantity);
             System.out.println("The profit of the "+this.name+" is="+quantity*this.price);
+            System.out.println("The remaining "+this.name+" are "+this.totalQuantity);
             System.out.println();
         }
         else{
-            System.out.println("Not enough Quantity");
+            System.out.println("Sorry,The products can't be sold");
+            System.out.println("Not enough Quantity,Only "+this.totalQuantity+" "+this.name+" are left,Please choose Again");
         }
     }
     static int getTotalSold(){
@@ -29,6 +32,7 @@ public class Producttt {
     public static void main(String[] args) {
         Product p1=new Product("TWS",10000,10);
         p1.sell(4);
+//        p1.sell(14);
 //        System.out.println("Total No of all Products sold are:"+p1.getTotalSold());
 
         Product p2=new Product("Laptop",100000,10);

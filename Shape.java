@@ -1,7 +1,4 @@
 package TNSIndia;
-
-import java.util.concurrent.locks.ReadWriteLock;
-
 interface ShapeInterface{
 
     abstract void getArea();
